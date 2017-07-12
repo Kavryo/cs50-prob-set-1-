@@ -3,6 +3,7 @@
 
 void main()
 {
+    //intialising variables
     int i,j,k,l;
 
     //gets input from user
@@ -14,19 +15,19 @@ void main()
     while(i<0 || i>23);
 
     //pyramid design
-    for(j=0;j<i;j++)
+    for(j=0;j<i;j++) //for no. of lines
     {
-        // pyramid
-        for(k=i-2;k>=j;k--)
+        
+        for(k=i-2;k>=j;k--) //for printing spaces
         {
             printf(" ");
         }
 
-        for(l=0;l<=j+1;l++)
+        for(l=0;l<=j+1;l++) //for printing hashes
         {
             printf("#");
         }
-        printf("\n");
+        printf("\n");  //for new line
     }
 
 }
