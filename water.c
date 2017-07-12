@@ -3,7 +3,9 @@
 
 void main()
 {
+   //initialising variables
    int minutes,bottles;
+   //to get valid input from the user  
    do
    {
     printf("Minutes:");
@@ -11,6 +13,6 @@ void main()
    }
    while(minutes<0);
 
-   bottles = 12*minutes;
-   printf("Bottles:%d\n",bottles);
+   bottles = 12*minutes; //to convert minutes into bottles
+   printf("Bottles:%d\n",bottles); //printing the no. of bottles
 }
