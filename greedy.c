@@ -3,8 +3,9 @@
 
 void main()
 {
+    //intialising variables
     float change;
-    int coins = 0,quarter=0,dime=0,cent=0,penny=0;
+    int coins = 0,quarter=0,dime=0,cent=0,penny=0; //since the no. of quarter dimes cents and pennys are gonna be in int 
     do
     {
         printf("change:",change);
