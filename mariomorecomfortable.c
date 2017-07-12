@@ -5,7 +5,7 @@ void main()
 {
     int i,j,k,l,m;
 
-    //gets input from user
+    //gets valid input from user
     do
     {
         printf("Height:",i);
