@@ -5,7 +5,9 @@ void main()
 {
     //intialising variables
     float change;
-    int coins = 0,quarter=0,dime=0,cent=0,penny=0; //since the no. of quarter dimes cents and pennys are gonna be in int 
+    int coins = 0,quarter=0,dime=0,cent=0,penny=0; //since the no. of quarter, dimes, cents and pennys are gonna be in int 
+    
+    //to get the correct use input
     do
     {
         printf("change:",change);
@@ -14,11 +16,11 @@ void main()
     while (change<=0);
 
     //for quarter
-    while(change >= 0.25 )
+    while(change >= 0.25 ) //while loop for iteration
     {
-        coins++;
-        quarter++;
-        change = change - 0.25;
+        coins++; //will increase coin count
+        quarter++; //will increase quarter count
+        change = change - 0.25; //will reduce the amount from change
     }
 
     //for dimes
@@ -44,6 +46,6 @@ void main()
         penny++;
         change = change - 0.01;
     }
-    printf("coins : %d\n",coins);
-    printf("Quarter:%d  Dime:%d  Cent:%d  Penny:%d\n",quarter,dime,cent,penny);
+    printf("coins : %d\n",coins); // will print the no. of coins
+    printf("Quarter:%d  Dime:%d  Cent:%d  Penny:%d\n",quarter,dime,cent,penny); //will print the no. of quarter,dime,cent and penny
 }
